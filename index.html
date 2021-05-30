@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
     </head>
 <body>
  <header class="header">
@@ -63,13 +64,54 @@
  <main class="main">
      <div class="container">
          <div class="row">
-             <div class="col-md-3">Filter</div>
+             <div class="col-md-3">
+                 <div class="filter">
+                     <div class="device">
+                         <span class="bold">DEVICE TYPE</span>
+                         <input type="checkbox" id="white">
+                         <label for="white">Laptop</label>
+                         <input type="checkbox" id="dewice">
+                         <label for="dewice">Tablet</label>
+                     </div>
+                     <div class="color">
+                        <span class="bold">COLOR</span>
+                        <input type="checkbox" id="black">
+                        <label for="black">Black</label>
+                        <input type="checkbox" id="red">
+                        <label for="red">Red</label>
+                        <input type="checkbox" id="green">
+                        <label for="green">Green</label>
+                        <input type="checkbox" id="blue">
+                        <label for="blue">Blue</label>
+                        <input type="checkbox" id="orange">
+                        <label for="orange">Orange</label>
+                     </div>
+                     <div class="ram">
+                         <span class="bold">RAM</span>
+                         <input type="checkbox" id="gb1">
+                         <label for="gb1">1GB</label>
+                         <input type="checkbox" id="gb2">
+                         <label for="gb2">2GB</label>
+                         <input type="checkbox" id="gb4">
+                         <label for="gb4">4GB</label>
+                         <input type="checkbox" id="gb6">
+                         <label for="gb6">6GB</label>
+                         <input type="checkbox" id="gb8">
+                         <label for="gb8">8GB</label>
+                                                 
+                     </div>
+                     <span>Show more options...</span>
+                    
+                         <button class="submit">SUBMIT</button>
+                    
+                 </div>
+             </div>
              <div class="col-md-75">
                  <div class="row">
                      <div class="col-md-12">
                          <div class="breadcrumbs">
-                            <a href="">Home page</a>
-                            <a href="">Products</a>
+                            <a href="">Home page > </a>
+                            <a href="">Products > </a>
                             <span>Laptops and Tablets</span>
                          </div>
                      </div>
@@ -80,8 +122,9 @@
                         </div>
                      <div class="col-md-4">
                          <div class="sort">
-                         <ul>
-                             <li>sort by price</li>
+                             <li class="sortPrice">sort by price</li>
+                         <ul class="sortSubmenu">
+                             
                              <li>sort by name</li>
                              <li>sort by date</li>
                              <li>sort by populary</li>
